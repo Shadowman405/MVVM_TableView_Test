@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var viewModel: TableViewModelType?
+    private var viewModel: TableViewViewModelType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +19,16 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.nummerOfRows ?? 0
+        return viewModel?.numberOfRows() ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
         guard let tableViewCell = cell, let viewModel = viewModel else {return UITableViewCell()}
-        let profile = viewModel.profiles[indexPath.row]
-        tableViewCell.ageLbl.text = "\(profile.age)"
-        tableViewCell.fullNameLbl.text = "\(profile.name) \(profile.secondName)"
+        
+        let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
+        tableViewCell.viewModel = cellViewModel
         return tableViewCell
     }
 }
