@@ -15,6 +15,8 @@
 		BF57CC5827779CD9006E704F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CC5727779CD9006E704F /* TableViewController.swift */; };
 		BF57CC5A27779D20006E704F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CC5927779D20006E704F /* Profile.swift */; };
 		BF57CC5C27779EE6006E704F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CC5B27779EE6006E704F /* TableViewCell.swift */; };
+		BF57CC602778CD9A006E704F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CC5F2778CD9A006E704F /* ViewModel.swift */; };
+		BF57CC622778CE77006E704F /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CC612778CE77006E704F /* TableViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BF57CC5727779CD9006E704F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BF57CC5927779D20006E704F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BF57CC5B27779EE6006E704F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BF57CC5F2778CD9A006E704F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BF57CC612778CE77006E704F /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,12 @@
 		BF57CC4227779C21006E704F /* MVVM_TableView_Test */ = {
 			isa = PBXGroup;
 			children = (
+				BF57CC642778CF06006E704F /* Protocols */,
+				BF57CC632778CEF5006E704F /* ViewModel */,
 				BF57CC5E27779F92006E704F /* View */,
 				BF57CC5D27779F85006E704F /* Model */,
 				BF57CC4327779C21006E704F /* AppDelegate.swift */,
 				BF57CC4527779C21006E704F /* SceneDelegate.swift */,
-				BF57CC5727779CD9006E704F /* TableViewController.swift */,
 				BF57CC4927779C21006E704F /* Main.storyboard */,
 				BF57CC4C27779C38006E704F /* Assets.xcassets */,
 				BF57CC4E27779C38006E704F /* LaunchScreen.storyboard */,
@@ -84,9 +89,26 @@
 		BF57CC5E27779F92006E704F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF57CC5727779CD9006E704F /* TableViewController.swift */,
 				BF57CC5B27779EE6006E704F /* TableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BF57CC632778CEF5006E704F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CC5F2778CD9A006E704F /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF57CC642778CF06006E704F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CC612778CE77006E704F /* TableViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +185,8 @@
 				BF57CC4427779C21006E704F /* AppDelegate.swift in Sources */,
 				BF57CC5A27779D20006E704F /* Profile.swift in Sources */,
 				BF57CC5827779CD9006E704F /* TableViewController.swift in Sources */,
+				BF57CC622778CE77006E704F /* TableViewModelType.swift in Sources */,
+				BF57CC602778CD9A006E704F /* ViewModel.swift in Sources */,
 				BF57CC4627779C21006E704F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,10 +17,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="C2W-Nz-HNp" customClass="TableViewCell" customModule="MVVM_TableView_Test" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="47"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="47.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C2W-Nz-HNp" id="ORm-DN-2Cf">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieu-EN-NEP">
@@ -33,7 +33,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-oO-NEp">
-                                            <rect key="frame" x="322" y="13" width="70" height="21"/>
+                                            <rect key="frame" x="322" y="13" width="70" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="70" id="dQT-Ys-I6r"/>
                                             </constraints>
